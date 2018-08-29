@@ -71,11 +71,12 @@
 .seat-selection .seat-row-seat div:hover{
   background-color:#dcdcdc;
 } 
-/* 
-.seat-selection .seat-row-seat.seat-yes{
-  border-color:#8a8a8a;
-  background-color:#fafafa;
+.seat-selection .seat-row-seat div.seat-yes{
+  border-color:#8a8a8a !important;
+  background-color:#fafafa !important;
 }
+/* 
+
 .seat-selection .seat-row-seat.can-select{
   background-color:#fff;
     cursor: pointer;
