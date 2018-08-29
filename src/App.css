@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.container {
+  /* overflow-y: hidden; */
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* width: 100%; */
+  /* justify-content: center; */
+}
+.seat-selection {
+  padding: 0px 10px 0px 10px;
+  overflow-y: hidden;
+}
+.seat-selection .seat-row-seat{
+    white-space: nowrap;
+    overflow: scroll;
+    display: table-row;
+    border: 1px solid transparent;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    margin: 2px;
+    vertical-align: -webkit-baseline-middle;
+    border-radius: 2px;
+}
+
+.seat-selection .seat-row-seat div {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 1px 0px 0px 1px;
+    background: #b9b9b9;
+    border-radius: 2px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    margin: 2px;
+}
+.seat-selection .seat-row-seat span {
+    display: block;
+    margin: 5px;
+    font-size: small;
+}
+.seat-selection .seat-row-seat div:hover{
+  background-color:#dcdcdc;
+} 
+/* 
+.seat-selection .seat-row-seat.seat-yes{
+  border-color:#8a8a8a;
+  background-color:#fafafa;
+}
+.seat-selection .seat-row-seat.can-select{
+  background-color:#fff;
+    cursor: pointer;
+}
+.seat-selection .seat-row-seat.can-select span{
+  background-color:#fff;
+  font-size:0.8em;
+}
+
+.seat-selection .seat-row-seat.current-selected.can-select span{
+  background-color:#41db41;
+}
+.seat-selection .seat-row-seat.current-selected.can-select:hover span{
+  background-color:#41db41;
+}
+.seat-selection .seat-row-seat.can-select:hover span{
+  background-color:#dcdcdc;
+} */
