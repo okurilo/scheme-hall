@@ -6,12 +6,18 @@ class Scheme extends Component {
     render() {
         const {rows} = this.props;
         return (
-            <ul className="seat-selection">
-                {rows.map((rows, i) => {
-                    return <Row key={i} {...rows} />
-                   }
-                )}
-            </ul>
+            <div className="container">
+                <div>
+                    <button>+</button>
+                    <button>-</button>
+                </div>
+                <ul className="seat-selection">
+                    {rows.map((rows, i) => {
+                        return <Row key={i} {...rows} />
+                       }
+                    )}
+                </ul>
+            </div>
         )
     }
 } 
